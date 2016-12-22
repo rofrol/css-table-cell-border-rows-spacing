@@ -1,0 +1,50 @@
+<!doctype html>
+
+<style>
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0;
+}
+
+.for-border {
+    border: 1px solid #000;
+    border-right-width: 0;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+td:last-child .for-border {
+    border-right-width: 1px;
+}
+
+tr:first-child .for-border {
+    margin-top: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+div {
+    background-color: gray;
+}
+
+</style>
+
+<div>
+    <table>
+        <tr>
+            <td><div class="for-border">one</div></td><td><div class="for-border">one one</div></td>
+        </tr>
+        <tr>
+            <td><div class="for-border">two</div></td><td><div class="for-border">two two</div></td>
+        </tr>
+        <tr>
+            <td><div class="for-border">three</div></td><td><div class="for-border">three three</div></td>
+        </tr>
+    </table>
+</div>
